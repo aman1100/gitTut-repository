@@ -56,3 +56,29 @@ git diff --staged
 	
 	=>PULL FROM THE ORIGIN MASTER:
 	git pull origin master
+=>Craeting a new branch and merge it with other branch or the master branch
+	=to check all the branch of our repository:
+	git branch
+	=to create a new branch :
+	git branch <branch name (eg:login-system)>
+	=Now you have to enter inside your new branch eg:<login-system>
+	git checkout <branch name eg:login-system>
+	=Add new files into the new branch your master branch doesnot get afftected:
+	git add .
+	=commit the changes:
+	git commit -m "Your commit comment"
+	=push all the files and code to your new branch :
+	git push -u origin <branch name eg:login-system>
+	=If ypu edited some piece of code or files from the github web rather than locally then pull all the files:
+	git pull origin <branch name>
+	
+	=>Now if you want to merger you another branch eg:login-system to the main branch then:
+	=>You have to enter inside your main branch 
+	=>To check all the branches:
+	git branch
+	=>Move into the master branch:
+	git checkout master
+	=>TO MERGE ALL THE FILES AND CODE TO THE MASTER BRANCH:
+	git merge <branch name eg:login-system>
+	=>after merging all the files you have to push all the files into the master branch:
+	git push -u origin master.
