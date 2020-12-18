@@ -1,0 +1,42 @@
+=> To check the present working directory:
+pwd
+=>to present the list of content in the folder or directory:
+ls
+=> To change the directory :
+cd
+=>to check the status of file:
+git status
+=>to enable git in the folder:
+git init
+=>for staging all the files int the git :
+git add --a
+=>regarding snapshot of all the files we have to commit :
+git commit -m "your comments like initial commit"
+=>to check all the commits you did:
+git log
+=>fot staging a single file rather than all the files :
+git add <filename>
+git commit -m "your comments like added new steps into GithubSteps.txt"
+=> to stop all the tracking in github you have to use this command this wil delete the repositry of git
+rm -rf .git
+=> to clone any project from github url
+git clone <url>
+=> to change the name of the cloned project :
+git clone <url> <wanted name>
+=>to quit the log pannel :
+type q
+=>To create a new document use :
+touch <filr name.extension>
+=> to ignore files and folders for tracking in github
+=>create a new file named as:
+touch .gitignore
+	inside .gitignore name the files you want to ignore like(error.log)
+	for ignoring all the files with same extension:
+	*.<extensionName>
+	example: *.log
+	=>to ignore directories or folder:
+	/<dirName> inside .gitignore file
+=> compare the staging area with working directory:
+git diff
+=> compare past commit with current staging area:
+git diff --staged
