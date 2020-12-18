@@ -1,25 +1,33 @@
+install git in your windows linux, windows, mac
+https://git-scm.com/downloads
+copy the above link after installing git open git bash terminal and try all the below steps
+ALL THE COMMANDS USED IN GIT BASH HERE 
 => To check the present working directory:
 pwd
 =>to present the list of content in the folder or directory:
 ls
 => To change the directory :
 cd
+craete a new folder/directory and put some text files in it randomly eg: helloworld.txt, database excelfile etc .
+right click and click at the option open git bash here inside your working directory.
 =>to check the status of file:
 git status
 =>to enable git in the folder:
 git init
-=>for staging all the files int the git :
+=>for staging (A staging step in git allows you to continue making changes to the working directory, and when you decide you wanna interact with version control, it allows you to record changes in small commits) all the files into the git :
 git add --a
 =>regarding snapshot of all the files we have to commit :
 git commit -m "your comments like initial commit"
 =>to check all the commits you did:
 git log
 =>fot staging a single file rather than all the files :
-git add <filename>
+git add <filename with extension>
 git commit -m "your comments like added new steps into GithubSteps.txt"
 => to stop all the tracking in github you have to use this command this wil delete the repositry of git
 rm -rf .git
 => to clone any project from github url
+=> visit this website, link https://github.com/tensorflow/tensorflow
+=>copy the url by tapping on code dropdown :
 git clone <url>
 => to change the name of the cloned project :
 git clone <url> <wanted name>
@@ -44,6 +52,7 @@ git diff --staged
 	Go to github.com open your account create a new repository 
 	= Name the repository
 	attach ssh keys to github.com website with following steps as mentioned on the website.
+	Tap on your profile at the right side corner > settings > ssh and gpg keys > add new ssh key > follow all the mentioned steps
 	As ssh key of your pc attached to github.com now you can push and pull your code and files.
 	=> Pushing the code and files
 	1> you have to add the origin(link of that repository) of your repository from  your gitbash 
@@ -82,3 +91,12 @@ git diff --staged
 	git merge <branch name eg:login-system>
 	=>after merging all the files you have to push all the files into the master branch:
 	git push -u origin master.
+=>To Delete any branch from your repository:
+	We have two commands for this :
+		1= git branch -d <branch name eg:login-system>
+		2= git psuh origin --delete <branch name eg: login-system>
+	Note: You have to be in master branch to perform the delete operation 
+	=> Now if you check all the branches inside your repository :
+	git branch
+	=> you see login-system branch is not there.
+Thank You!
