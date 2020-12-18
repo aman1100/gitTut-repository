@@ -40,3 +40,19 @@ touch .gitignore
 git diff
 => compare past commit with current staging area:
 git diff --staged
+=>push and pull
+	Go to github.com open your account create a new repository 
+	= Name the repository
+	attach ssh keys to github.com website with following steps as mentioned on the website.
+	As ssh key of your pc attached to github.com now you can push and pull your code and files.
+	=> Pushing the code and files
+	1> you have to add the origin(link of that repository) of your repository from  your gitbash 
+	git remote add origin <url>
+	2>We dont created the branch yet so we are pushing the code into the master branch.
+	check the status by using: git status
+	add the files by using : git add .
+	=>push the files to the origin:
+	git push -u origin master 
+	
+	=>PULL FROM THE ORIGIN MASTER:
+	git pull origin master
