@@ -1,0 +1,22 @@
+=>If you want to skip the staging area and want to do a direct commit:
+=>eg: you had a file named as GithubSteps.txt, now you created a new text file named as Advance GithubSteps.txt,
+=> =Now, you did some changes in GithubSteps.txt 
+=> if you check git status now than it will show staging for 2 files 
+1.modified: GithubSteps.txt 
+2.include : Advanced GiThubSteps.txt
+if you want to commit only for modified files rather than untracked file(Advance GithubSteps.txt):
+git commit -a -m "<commit statement>"
+
+=>To remove a file :
+git rm <file name>
+
+=> to rename a file:
+git mv <file name> <renamed filename>
+
+then commit with a proper message:
+git commit -m "message"
+
+=> To excplicitly untrack a file use command(This will not delete your file just untrack it from your git)
+=> if you upload a tracked file in yout .gitignore then modify the file. The git status will 
+	show you the modified message for that file, so now you have to explicitly untrack that file by using:
+git rm --cached <file name>
