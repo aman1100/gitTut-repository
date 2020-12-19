@@ -20,3 +20,19 @@ git commit -m "message"
 => if you upload a tracked file in yout .gitignore then modify the file. The git status will 
 	show you the modified message for that file, so now you have to explicitly untrack that file by using:
 git rm --cached <file name>
+=>To read all the commits use:
+git log -p
+press q to quit
+=> To read no. of commits use:
+git log -p -3
+=>To read commits not in brief use:
+git log --stat
+=> To filter the logs from number of days:
+git log --since=2.days
+git log --since=2.months
+git log --since=2.years
+
+=> advance filter:
+git log --preety=format:"<from documentation create your own filter>"
+=> To update the previous commits:
+git commit --ammend
