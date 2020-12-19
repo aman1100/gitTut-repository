@@ -1,0 +1,8 @@
+=>If you want to skip the staging area and want to do a direct commit:
+=>eg: you had a file named as GithubSteps.txt, now you created a new text file named as Advance GithubSteps.txt,
+=> =Now, you did some changes in GithubSteps.txt 
+=> if you check git status now than it will show staging for 2 files 
+1.modified: GithubSteps.txt 
+2.include : Advanced GiThubSteps.txt
+if you want to commit only for modified files rather than untracked file(Advance GithubSteps.txt):
+git commit -a -m "<commit statement>"
